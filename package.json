@@ -1,0 +1,20 @@
+{
+  "name": "docker-codeship-example",
+  "version": "1.0.0",
+  "description": "Basic example of Codeship CI integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests land\" && exit 0",
+    "build": "echo \"No build right now kbai\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sol-214/docker-codeship-example.git"
+  },
+  "author": "Simon Stackevicius <simon@stackus.dev>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sol-214/docker-codeship-example/issues"
+  },
+  "homepage": "https://github.com/sol-214/docker-codeship-example#readme"
+}

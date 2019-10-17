@@ -1,0 +1,19 @@
+variables:
+  image: &image node:lts-alpine
+  workdir: &workdir '/build'
+
+node:
+  build:
+    dockerfile: Dockerfile
+    image: *image
+    args:
+      IMAGE: *image
+      WORKDIR: *workdir
+  volumes:
+    - ./:/build
+
+staging:
+  image: *image
+  encrypted_env_file: env/staging
+  volumes_from:
+    - node

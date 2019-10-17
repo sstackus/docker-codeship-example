@@ -1,0 +1,14 @@
+# Build
+/build
+
+# Dependencies
+node_modules
+
+# OS
+.DS_Store
+.idea
+.vscode
+
+# Sensitive
+codeship.aes
+env/*.decrypted

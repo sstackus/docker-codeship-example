@@ -1,0 +1,17 @@
+- name: Codebase validation
+  type: serial
+  steps:
+    - name: Dependencies
+      service: node
+      command: npm install
+    - name: Tests
+      service: node
+      command: npm test
+
+- name: Staging pipeline
+  type: serial
+  tag: develop
+  steps:
+    - name: Build
+      service: staging
+      command: npm run build
